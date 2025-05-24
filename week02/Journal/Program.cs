@@ -34,7 +34,7 @@ class Program
 
             switch (choice)
             {
-                case "1": // Write new entry
+                case "1": 
                     Entry entry = new Entry();
 
                     Random random = new Random();
@@ -52,26 +52,26 @@ class Program
                     journal.AddEntry(entry);
                     break;
 
-                case "2": // Display journal
+                case "2": 
                     Console.WriteLine("\nJournal Entries:");
                     journal.DisplayAll();
                     break;
 
-                case "3": // Save to file
+                case "3":
                     Console.Write("Enter filename to save: ");
                     string saveFile = Console.ReadLine();
                     journal.SaveToFile(saveFile);
                     Console.WriteLine("Journal saved successfully!");
                     break;
 
-                case "4": // Load from file
+                case "4": 
                     Console.Write("Enter filename to load: ");
                     string loadFile = Console.ReadLine();
                     journal.LoadFromFile(loadFile);
                     Console.WriteLine("Journal loaded successfully!");
                     break;
 
-                case "5": // Exit
+                case "5": 
                     running = false;
                     break;
 
