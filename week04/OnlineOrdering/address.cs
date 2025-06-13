@@ -20,11 +20,6 @@ class Address
         return _country;
     }
 
-    public bool IsInUSA()
-    {
-        return _country.ToUpper() == "USA";
-    }
-
     public string GetFullAddress()
     {
         return $"{_streetAddress}\n{_city}, {_stateOrProvince}\n{_country}";
